@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 1. Edit the spider and set start_urls to your target forum section URL:
 
-- `moto2/spiders/moto2_spider.py`
+- `forum_scraper/spiders/forum_spider.py`
 
 2. Run the spider and export to JSON:
 
@@ -56,7 +56,7 @@ pip install -r requirements.txt
 scrapy crawl forum_threads -O output.json
 ```
 
-Export to CSV:
+3. Export to CSV:
 
 ```bash
 scrapy crawl forum_threads -O output.csv
@@ -80,9 +80,9 @@ Default settings in this repo are intentionally conservative.
 ## Project structure
 
 ```bash
-moto2/
+forum_scraper/
   spiders/
-    moto2_spider.py
+    forum_spider.py
   settings.py
   pipelines.py
   items.py
